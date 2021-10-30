@@ -1,11 +1,12 @@
-# jetbrains-academy-nlp
-JetBrains Academy, track "Natural Language Processing" (NLP)
+# JetBrains Academy, track "Natural Language Processing" (NLP)
 
-# Project: Text Generator
+Embark upon this track to get the essential skills of working with text data. Texts constitute the lion's share of all information stored on the Internet and beyond. This track will equip you with the right tools to process text data and extract useful information from it.
+--------------------------------------------------------------------------------
+## Project: Text Generator
 
-## About
+### About
 
 Machine learning is getting crazy smart these days. You've probably read texts or scripts written by machine learning algorithms, some of them even mimicking styles of certain people! If you ever wondered how it works and what are the secrets behind machine learning, this project is for you! You will have a chance to understand and implement a simple text generator using Markov chains.
 
-## Learning outcomes
+### Learning outcomes
 You will create a program that can predict the next word in a pseudo-sentence based on the previous words in the sequence and the data that is used to create a statistical model. You will get a deeper understanding of natural language processing, string operations, and the application of statistics in your code.
