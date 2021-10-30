@@ -12,26 +12,26 @@ Machine learning is getting crazy smart these days. You've probably read texts o
 ### Learning outcomes
 You will create a program that can predict the next word in a pseudo-sentence based on the previous words in the sequence and the data that is used to create a statistical model. You will get a deeper understanding of natural language processing, string operations, and the application of statistics in your code.
 
-Stage 1: Preprocess the text corpus
+#### Stage 1: Preprocess the text corpus
 
 Open the given text corpus, break the text into separate words, and obtain some properties of the corpus.
 
-Stage 2: Break the dataset into bigrams
+#### Stage 2: Break the dataset into bigrams
 
 Bigrams are sequences of two consecutive words from the dataset. Transform the preprocessed corpus into a list of bigrams.
 
-Stage 3: Create a Markov chain model
+#### Stage 3: Create a Markov chain model
 
 Create a Markov chain model that shows the probability of certain words appearing after a given chain of words.
 
-Stage 4: Generate random text
+#### Stage 4: Generate random text
 
 Use the Markov model to generate a text starting with a user-specified word and handle exceptions.
 
-Stage 5: Generate full sentences
+#### Stage 5: Generate full sentences
 
 Modify the algorithm so that sentences always start with capital letters and end with punctuation marks.
 
-Stage 6: Generate sentences based on trigrams
+#### Stage 6: Generate sentences based on trigrams
 
 Extend the program to create a Markov model based on trigrams in order to generate more sensible sentences.
