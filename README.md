@@ -70,3 +70,30 @@ Support the additional operators ?, *, and + that control the repetition of a ch
 #### Stage 6: Escaping
 
 Finally, implement the backslash \ as an escape symbol that allows to use metacharacters as literals.
+
+
+## Project: Key Terms Extraction
+
+### About
+
+Extracting keywords can help you get to the text meaning. Also, It can help you with splitting texts into different categories. In this project, you will learn how to extract relevant words from a collection of news stories. There are many different ways to do it, but we will focus on frequencies, part-of-speech search, and TF-IDF methods. Note that each method can yield the results with varying degrees of accuracy for different texts. In reality, it is always good to try various methods and choose the best.
+
+### Learning outcomes
+
+By completing this project, you will get to know and implement crucial text preprocessing stages, use an essential NLP library, and program maths formulas! Along the way, you will create a useful tool and learn how to handle reading and writing files with confidence.
+
+#### Stage 1: Most frequent words
+
+Read a file containing news articles, lowercase the text, tokenize it with the NLTK tokenizer's help, and create a token frequency list.
+
+#### Stage 2: Text preprocessing pipeline
+
+Improve the results by applying lemmatization and deleting stop-words, digits, and punctuation.
+
+#### Stage 3: Nouns are keywords
+
+Discover how to use part-of-speech tagging to extract the most frequent nouns and refine your keywords.
+
+#### Stage 4: Modifying frequencies for better results
+
+Find out how to identify words with the highest TF-IDF score.
