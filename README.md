@@ -3,7 +3,7 @@
 Embark upon this track to get the essential skills of working with text data. Texts constitute the lion's share of all information stored on the Internet and beyond. This track will equip you with the right tools to process text data and extract useful information from it.
 
 
-## Project: Text Generator
+## 1. Project: Text Generator
 
 ### About
 
@@ -37,7 +37,7 @@ Modify the algorithm so that sentences always start with capital letters and end
 Extend the program to create a Markov model based on trigrams in order to generate more sensible sentences.
 
 
-## Project: Regex Engine
+## 2. Project: Regex Engine
 
 ### About
 
@@ -72,7 +72,7 @@ Support the additional operators ?, *, and + that control the repetition of a ch
 Finally, implement the backslash \ as an escape symbol that allows to use metacharacters as literals.
 
 
-## Project: Key Terms Extraction
+## 3. Project: Key Terms Extraction
 
 ### About
 
