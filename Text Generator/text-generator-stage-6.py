@@ -24,14 +24,12 @@ def check_end_word(word):
 def gen_sentence(start_word, len_sentence):
     sentence = []
     sentence.append(' '.join(start_word))
-    for _ in range(len_sentence - 1):
-        # print(sentence)
+    for _ in range(len_sentence - 1):        
         if len(sentence) > 3 and sentence[-1][-1] in ('.', '?', '!'):
             return sentence
         next_word = random.choices(list(chain_dict[start_word].keys()), list(chain_dict[start_word].values()))[0]
         sentence.append(next_word)
-        start_word = start_word[1], next_word
-    # sentence.append(check_end_word(start_word))
+        start_word = start_word[1], next_word    
     return sentence
 
 
@@ -49,8 +47,6 @@ with open(corpus, 'r', encoding='utf-8') as file:
 
 bigram_list = [(token_list[idx], token_list[idx + 1]) for idx in range(len(token_list) - 1)]
 
-# print(bigram_list[: 10])
-
 trigram_list = list(trigrams(token_list))
 
 #file = open('trigrams.txt', 'w', encoding='utf-8')
@@ -65,12 +61,8 @@ for head1, head2, tail in trigram_list:
     chain_dict.setdefault(key, [])
     chain_dict[key].append(tail)
 
-# print(chain_dict)
-
 for key, value in chain_dict.items():
     chain_dict[key] = Counter(value)
-
-# print(chain_dict)
 
 final_text = []
 
@@ -78,17 +70,13 @@ count = 0
 
 while count < 10:
     sentence_length = random.randint(5, 10)
-    start_word = check_start_word()
-    #start_word = 'Kill', 'him!'
-    # print(start_word)
+    start_word = check_start_word()    
     test_sentence = gen_sentence(start_word, sentence_length)
     if test_sentence[-1][-1] not in ('.', '?', '!'):
         continue
     else:
         final_text.append(test_sentence)
         count += 1
-
-#print(final_text)
 
 for item in final_text:
     print(' '.join(item))
